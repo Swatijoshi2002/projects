@@ -1,0 +1,151 @@
+/* body */
+
+body {
+    background-image: url("mobile-expense-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    margin: 30px auto;
+    width: 800px;
+    height: 100%;
+    background-color: grey;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1 {
+    letter-spacing: 1px;
+    margin: 0%;
+}
+
+h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin: 40px 0 10px;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+.i_e_container {
+    background-color: aliceblue;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.i_e_container>div {
+    flex: 1;
+    text-align: center;
+}
+
+.i_e_container>div:first-of-type {
+    border-right: 1px solid black;
+}
+
+.i_e_container>div:last-of-type {
+    border-left: 1px solid black;
+}
+
+.money_add {
+    color: green;
+}
+
+.money_minus {
+    color: red;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="number"] {
+    border: 2px solid white;
+    border-radius: 2px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 0 30px;
+    width: 90%;
+    border: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.btn:focus {
+    outline: 0ch;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.list li {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.list li.plus {
+    border-right: 5px green;
+}
+
+.list li.plus {
+    border-right: 5px red;
+}
+
+.delete_btn {
+    cursor: pointer;
+    background-color: darkred;
+    border: 0;
+    ;
+    color: white;
+    ;
+    font-size: 15px;
+    list-style: 15px;
+    padding: 2px 5px;
+    top: 50%;
+    left: 0;
+    transform: translate(-100, -50);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete_btn {
+    opacity: 1;
+}
+
+#money_add {
+    font-size: larger;
+}
+
+.form_control{
+    color: black;
+}
